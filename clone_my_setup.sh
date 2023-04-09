@@ -1,6 +1,6 @@
 #!/bin/bash
 
-dotfile_repo_url="xxxxxxx"
+dotfile_repo_url="https://github.com/nickdevhouse/dotfiles"
 
 ####################################################
 #                  Preparation                     #

@@ -25,7 +25,7 @@ else
   brew install iterm2
 fi
 
-echo "Install realtated app: iTerm2, fish and tmux etc"
+echo "Install realtated app: fish and tmux etc"
 brew install git fish tmux neovim exa ghq peco
 
 
@@ -36,7 +36,7 @@ brew install git fish tmux neovim exa ghq peco
 # Git setup repo clone
 echo "Clone Setup into local dotfiles folder"
 cd ~
-git clone $repo_url dotfiles 
+git clone $dotfile_repo_url dotfiles 
 
 echo $(pwd)
 

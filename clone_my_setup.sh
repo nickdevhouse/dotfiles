@@ -41,7 +41,7 @@ git clone $dotfile_repo_url dotfiles
 # Copy each setup
 echo ">>> Import iTerms Color Presets"
 presets_path="./dotfiles/iTerm_presets.itermcolors"
-open "$presets_path" -a iTerm2
+open "$presets_path" -a /Applications/iTerm.app/Contents/MacOS/iTerm2
 
 echo ">>> Copy my fish theme setup"
 test -d ./.config/fish && rm -rf ./.config/fish

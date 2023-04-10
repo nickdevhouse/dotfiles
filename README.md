@@ -1,8 +1,10 @@
 # My Neovim Environment Setup 🚀
 
+`TODO: Add some screnshot and NickDevHouse Channel Link`
+
 # Clone My Setup
 
-**If you donot care below XZY setups, just want to have a some setup with me, simply run below scripts**
+**If you donot care below XZY setups, just want to have a some setup with me, simply download [clone_my_setup.sh](https://github.com/nickdevhouse/dotfiles/blob/main/clone_my_setup.sh) and run below scripts**
 
 ```
 bash clone_my_setup.sh

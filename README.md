@@ -1,16 +1,30 @@
 # My Neovim Environment Setup 🚀
 
-`TODO: Add some screnshot and NickDevHouse Channel Link`
-
 # Clone My Setup
 
 **If you donot care below XZY setups, just want to have a some setup with me, simply download [clone_my_setup.sh](https://github.com/nickdevhouse/dotfiles/blob/main/clone_my_setup.sh) and run below scripts**
+
+**IMPORTANT:** Backup your own setup first, just in case you want it back. Proceed at your own risk! Cheers~ Happy coding.
 
 ```
 bash clone_my_setup.sh
 ```
 
 👇 **Further more info about my setup.** 👇
+
+![neovim screenshot](./demo/demo_1.png)
+
+![neovim screenshot](./demo/demo_2.png)
+
+![neovim screenshot](./demo/demo_3.png)
+
+![neovim screenshot](./demo/demo_4.png)
+
+![neovim screenshot](./demo/demo_5.png)
+
+![neovim screenshot](./demo/demo_6.png)
+
+![neovim screenshot](./demo/demo_7.png)
 
 # Terminal Setup
 

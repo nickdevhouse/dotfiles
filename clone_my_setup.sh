@@ -1,10 +1,21 @@
 #!/bin/bash
+#
+#####################################################
+#  Auther: NickDevHouse                             #
+#  Date: 2023-Apr-10                                #
+#                                                   #
+#  This script test on MacOS only, welcome testing  #
+#  for Linux and Windows, and make a pull request   #
+#  in my github repo if any change is needed:       #
+#  https://github.com/nickdevhouse/dotfiles         #
+#                                                   #
+#####################################################
 
 dotfile_repo_url="https://github.com/nickdevhouse/dotfiles"
 
-####################################################
-#                  Preparation                     #
-####################################################
+#####################################################
+#                    Preparation                    #
+#####################################################
 
 ## Check if homebrew is installed
 echo ">>> Checing Homebrew Installation"
@@ -29,9 +40,9 @@ echo ">>> Install realtated app: fish and tmux etc"
 brew install git fish tmux neovim exa ghq peco
 
 
-####################################################
-#                  Clone My Setup                  #
-####################################################
+#####################################################
+#                  Clone My Setup                   #
+#####################################################
 
 # Git setup repo clone
 echo ">>> Clone Setup into local dotfiles folder"

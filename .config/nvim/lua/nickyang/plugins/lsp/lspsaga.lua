@@ -11,11 +11,11 @@ saga.setup({
 	definition = {
 		edit = "<CR>",
 	},
-	-- ui = {
-	-- 	colors = {
-	-- 		normal_bg = "#002b36",
-	-- 	},
-	-- },
+	ui = {
+		colors = {
+			normal_bg = "#002b36",
+		},
+	},
 })
 
 local opts = { noremap = true, silent = true }

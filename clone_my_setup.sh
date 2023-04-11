@@ -36,9 +36,15 @@ else
   brew install iterm2
 fi
 
-echo ">>> Install realtated app: fish and tmux etc"
-brew install git fish tmux neovim exa ghq peco
+if command -v git > /dev/null; then
+  echo " - Git is installed"
+else
+  echo " - Git is not installed, install it"
+  brew install git
+fi
 
+echo ">>> Install realtated app: fish and tmux etc"
+brew install fish tmux neovim exa ghq peco
 
 #####################################################
 #                  Clone My Setup                   #

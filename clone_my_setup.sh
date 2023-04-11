@@ -76,5 +76,12 @@ cp -aR ./dotfiles/.config/nvim ./.config/nvim
 ####################################################
 
 # Run PackerSync
-nvim --headless -c "sleep 2" -c "silent PackerSync" -c "qa"
-echo "PackerSync Done!"
+echo ">>> PackerSync, wait for up to 30 seconds..."
+nvim --headless -c "sleep 2" -c "silent PackerSync" -c "sleep 30" -c "qa"
+echo ">>> PackerSync Done!"
+
+# Temp workaround for Lspsaga diagonotis bug
+echo ">>> Temp workaround for Lspsaga diagonotis bug, Start..."
+cd $HOME/.local/share/nvim/site/pack/packer/start/lspsaga.nvim
+git reset --hard 3a341e3
+echo ">>> Temp workaround for Lspsaga diagonotis bug, Done!"

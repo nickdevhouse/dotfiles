@@ -52,7 +52,7 @@ opt.termguicolors = true
 opt.background = "dark" -- colorschemes that can be light or dark will be made dark
 opt.signcolumn = "yes" -- show sign column so that text doesn't shift
 opt.wildoptions = "pum" -- Display the completion matches using the popup menu
-opt.pumblend = 5 -- Enables pseudo-transparentcy fro popup-menu. Valid from 0 ~ 100
+-- opt.pumblend = 5 -- Enables pseudo-transparentcy fro popup-menu. Valid from 0 ~ 100
 opt.winblend = 0 -- Disabled pseudo-transparency for a floating window
 
 -- backspace

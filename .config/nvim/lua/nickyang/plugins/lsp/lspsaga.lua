@@ -27,6 +27,7 @@ vim.keymap.set("n", "K", "<Cmd>Lspsaga hover_doc<CR>", opts)
 vim.keymap.set("n", "gh", "<Cmd>Lspsaga lsp_finder<CR>", opts)
 vim.keymap.set("n", "gp", "<Cmd>Lspsaga peek_definition<CR>", opts)
 vim.keymap.set("n", "grn", "<Cmd>Lspsaga rename<CR>", opts)
+vim.keymap.set("n", "<leader>o", "<cmd>Lspsaga outline<CR>")
 -- Clear vim hlsearch (highlight search)
 vim.keymap.set("n", "<leader>ch", "<Cmd>noh<CR>", opts)
 

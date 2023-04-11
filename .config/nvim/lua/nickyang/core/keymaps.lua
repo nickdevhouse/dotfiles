@@ -71,3 +71,6 @@ keymap.set("n", "<leader>sm", ":MaximizerToggle<CR>") -- toggle split window max
 
 -- nvim-tree
 keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>") -- toggle file explorer
+
+-- Restart Lsp server
+keymap.set("n", "<leader>rs", ":LspRestart<CR>")

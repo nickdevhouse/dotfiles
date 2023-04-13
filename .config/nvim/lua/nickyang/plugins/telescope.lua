@@ -56,12 +56,21 @@ telescope.load_extension("file_browser")
 -- load flutter-tools commands
 telescope.load_extension("flutter")
 
+-- See `:help telescope.builtin`
 vim.keymap.set("n", ";f", function()
 	builtin.find_files({
 		no_ignore = false,
 		hidden = true,
 	})
 end)
+vim.keymap.set("n", ";o", builtin.oldfiles, { desc = "[o] Find recently opened files" })
+vim.keymap.set("n", ";<space>", function()
+	-- You can pass additional configuration to telescope to change theme, layout, etc.
+	builtin.current_buffer_fuzzy_find(require("telescope.themes").get_dropdown({
+		winblend = 0,
+		previewer = false,
+	}))
+end, { desc = "[; ] Fuzzily search in current buffer" })
 vim.keymap.set("n", ";r", function()
 	builtin.live_grep()
 end)

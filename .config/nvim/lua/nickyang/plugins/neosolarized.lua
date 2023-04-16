@@ -17,7 +17,8 @@ local styles = cb.styles
 
 Color.new("white", "#ffffff")
 Color.new("black", "#000000")
-Color.new("cyan", "#2aa198")
+Color.new("borderGrey", "#96A0A1")
+Color.new("pmenuSelGrey", "#586e75")
 Group.new("Normal", colors.base1, colors.NONE, styles.NONE)
 Group.new("CursorLine", colors.none, colors.base03, styles.NONE, colors.base1)
 Group.new("CursorLineNr", colors.yellow, colors.black, styles.NONE, colors.base1)
@@ -38,5 +39,7 @@ Group.new("DiagnosticUnderlineInfo", colors.none, colors.none, styles.undercurl,
 Group.new("DiagnosticUnderlineHint", colors.none, colors.none, styles.undercurl, cHint)
 
 -- Custom Lspsaga UI colors
-Group.new("HoverBorder", colors.yellow, colors.none, styles.NONE)
-Group.new("SagaBorder", colors.cyan, colors.none, styles.NONE)
+Group.new("HoverBorder", colors.borderGrey, colors.none, styles.NONE)
+Group.new("SagaBorder", colors.borderGrey, colors.none, styles.NONE)
+Group.new("Pmenu", colors.none, colors.none, styles.NONE)
+Group.new("PmenuSel", colors.none, colors.pmenuSelGrey, styles.NONE)

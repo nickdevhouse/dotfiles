@@ -18,13 +18,17 @@ bash clone_my_setup.sh
 
 ![neovim screenshot](./demo/demo_3.png)
 
+![neovim screenshot](./demo/demo_0_1.png)
+
+![neovim screenshot](./demo/demo_0_2.png)
+
 ![neovim screenshot](./demo/demo_4.png)
 
 ![neovim screenshot](./demo/demo_5.png)
 
-![neovim screenshot](./demo/demo_6.png)
-
 ![neovim screenshot](./demo/demo_7.png)
+
+![neovim screenshot](./demo/demo_6.png)
 
 # Terminal Setup
 

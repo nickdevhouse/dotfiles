@@ -68,6 +68,8 @@ echo ">>> Install fisher and z"
 curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher install jorgebucaran/fisher
 fish -c "fisher remove jethrokuan/z"
 fish -c "fisher install jethrokuan/z"
+fish -c "fisher remove edc/bass"
+fish -c "fisher install edc/bass"
 
 echo ">>> Archiv exist tmux folder and copy my tmux setup"
 test -d ./.config/tmux && rm -rf ./.config/tmux

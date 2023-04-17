@@ -5,12 +5,21 @@ if not flutterTools_setup then
 end
 
 local on_attach = function(client, bufnr)
-	-- formatting
-	if client.server_capabilities.documentFormattingProvider then
-		vim.api.nvim_command([[augroup Format]])
-		vim.api.nvim_command([[autocmd! * <buffer>]])
-		vim.api.nvim_command([[autocmd BufWritePre <buffer> lua vim.lsp.buf.formatting_seq_sync()]])
-		vim.api.nvim_command([[augroup END]])
+	local au = vim.api.nvim_create_autocmd
+	local ag = vim.api.nvim_create_augroup
+	local clear_au = vim.api.nvim_clear_autocmds
+
+	-- Autoformat on save
+	local augroup = ag("LspFormatting", { clear = false })
+	if client.supports_method("textDocument/formatting") then
+		au("BufWritePre", {
+			clear_au({ group = augroup, buffer = bufnr }),
+			group = augroup,
+			buffer = bufnr,
+			callback = function()
+				vim.lsp.buf.format()
+			end,
+		})
 	end
 
 	local function buf_set_keymap(...)

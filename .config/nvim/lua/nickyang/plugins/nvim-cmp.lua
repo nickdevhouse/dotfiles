@@ -80,18 +80,12 @@ cmp.setup({
 		}),
 	},
 	window = {
-		-- completion = {
-		--   col_offset = -3 -- align the abbr and word on cursor (due to fields order below)
-		-- },
-		-- documentation = {
-		--   winhighlight = "Normal:Pmenu,FloatBorder:Pmenu,Search:None"
-		-- },
-
-		-- border style
+		-- cmp window style
 		completion = cmp.config.window.bordered({
 			-- col_offset = -3, -- align the abbr and word on cursor (due to fields order below)
 			side_padding = 0,
-			winhighlight = "Normal:Pmenu,FloatBorder:Pmenu,Search:None",
+			-- Customize highlight `Pmenu`, `PmenuSel` in neosolarise.lua
+			winhighlight = "Normal:Pmenu,FloatBorder:Pmenu,CursorLine:PmenuSel,Search:None",
 		}),
 		documentation = cmp.config.window.bordered(),
 	},

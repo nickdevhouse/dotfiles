@@ -1,0 +1,193 @@
+{
+    "editor.minimap.enabled": false,
+    "editor.lineNumbers": "relative",
+    "workbench.iconTheme": "material-icon-theme",
+    "vim.insertModeKeyBindings": [
+      {
+        "before": ["j", "j"],
+        "after": ["<Esc>"]
+      }
+    ],
+    "vim.commandLineModeKeyBindings": [],
+    "vim.normalModeKeyBindingsNonRecursive": [
+      {
+        "before": ["u"],
+        "after": [],
+        "commands": [
+          {
+            "command": "undo"
+          }
+        ]
+      },
+      {
+        "before": ["<C-r>"],
+        "after": [],
+        "commands": [
+          {
+            "command": "redo"
+          }
+        ]
+      },
+      {
+        "before": ["<C-j>"],
+        "after": ["5", "j"]
+      },
+      {
+        "before": ["<C-k>"],
+        "after": ["5", "k"]
+      },
+      {
+        "before": ["g", "p"],
+        "commands": ["editor.action.peekDefinition"]
+      },
+      {
+        "before": ["g", "i"],
+        "commands": ["editor.action.goToImplementation"]
+      },
+      {
+        "before": ["g", "d"],
+        "commands": ["editor.action.revealDefinition"]
+      },
+      {
+        "before": ["g", "b"],
+        "commands": ["workbench.action.navigateBack"]
+      },
+      {
+        "before": ["g", "f"],
+        "commands": ["workbench.action.navigateForward"]
+      },
+      {
+        "before": ["t", "n"],
+        "commands": [":tabnext"]
+      },
+      {
+        "before": ["t", "p"],
+        "commands": [":tabprev"]
+      },
+      {
+        "before": ["<Leader>", "p", "d"],
+        "commands": ["editor.action.peekDefinition"]
+      },
+      {
+        "before": ["<Leader>", "t", "b"],
+        "commands": ["editor.debug.action.toggleBreakpoint"]
+      },
+      {
+        "before": ["<Leader>", "s", "f"],
+        "commands": ["togglePeekWidgetFocus"]
+      },
+      {
+        "before": ["<Leader>", "e", "n"],
+        "commands": ["editor.action.marker.next"]
+      },
+      {
+        "before": ["<Leader>", "e", "p"],
+        "commands": ["editor.action.marker.prev"]
+      },
+      {
+        "before": ["<Leader>", "s", "h"],
+        "commands": ["editor.action.showHover"]
+      },
+      {
+        "before": ["<Leader>", "r"],
+        "commands": ["workbench.action.quickOpenLeastRecentlyUsedEditorInGroup"]
+      },
+      {
+        "before": ["<Leader>", "j"],
+        "after": ["J"]
+      },
+      {
+        "before": ["<Leader>", "o", "f"],
+        "commands": ["workbench.explorer.fileView.focus"]
+      },
+      {
+        "before": ["\"0p"],
+        "after": ["<leader>p"]
+      },
+      // splits
+      { 
+        "before": ["<Leader>", "v"],
+        "commands": [":vsplit"] 
+      },
+      { 
+        "before": ["<Leader>", "s"],
+        "commands": [":split"] 
+      },
+      // panes
+      { 
+        "before": ["<Leader>", "h"],
+        "commands": ["workbench.action.focusLeftGroup"] 
+      },
+      { 
+        "before": ["<Leader>", "j"],
+        "commands": ["workbench.action.focusBelowGroup"] 
+      },
+      { 
+        "before": ["<Leader>", "k"],
+        "commands": ["workbench.action.focusAboveGroup"] 
+      },
+      { 
+        "before": ["<Leader>", "l"],
+        "commands": ["workbench.action.focusRightGroup"] 
+      }
+    ],
+    "vim.leader": "<Space>",
+    "vim.useSystemClipboard": true,
+    "terminal.integrated.defaultProfile.osx": "fish",
+    "terminal.external.osxExec": "iTerm2.app",
+    "workbench.colorCustomizations": {
+      "terminal.background": "#002833",
+      "terminal.foreground": "#839395",
+      "terminal.ansiBlack": "#003440",
+      "terminal.ansiBrightBlack": "#586d74",
+      "terminal.ansiBlue": "#268ad1",
+      "terminal.ansiBrightBlue": "#839395",
+      "terminal.ansiCyan": "#2aa097",
+      "terminal.ansiBrightCyan": "#93a0a0",
+      "terminal.ansiGreen": "#859801",
+      "terminal.ansiBrightGreen": "#586d74",
+      "terminal.ansiMagenta": "#d23581",
+      "terminal.ansiBrightMagenta": "#6c6ec6",
+      "terminal.ansiRed": "#db312f",
+      "terminal.ansiBrightRed": "#ca4a16",
+      "terminal.ansiWhite": "#eee7d4",
+      "terminal.ansiBrightWhite": "#fdf5e2",
+      "terminal.ansiYellow": "#b48800",
+      "terminal.ansiBrightYellow": "#657a82"
+    },
+    "explorer.autoReveal": true,
+    "tabnine.experimentalAutoImports": true,
+    "editor.formatOnSave": true,
+    "dart.debugExternalPackageLibraries": false,
+    "dart.debugSdkLibraries": false,
+    "dart.previewFlutterUiGuidesCustomTracking": true,
+    "dart.previewFlutterUiGuides": true,
+    "[python]": {
+      "editor.formatOnType": true
+    },
+    "python.formatting.provider": "black",
+    "errorLens.excludeBySource": ["eslint(prettier/prettier)"],
+    "terminal.integrated.fontFamily": "SauceCodePro Nerd Font, 'FiraMono Nerd Font Mono'",
+    "editor.fontFamily": "SauceCodePro Nerd Font, Menlo, Monaco, 'Courier New', monospace, 'FiraMono Nerd Font Mono'",
+    "terminal.integrated.fontWeight": "normal",
+    "workbench.colorTheme": "Theme Mix",
+    "editor.codeActionsOnSave": {},
+    "editor.fontSize": 13,
+    "workbench.sideBar.location": "right",
+    "terminal.integrated.fontSize": 13,
+    "workbench.activityBar.location": "hidden",
+    "editor.peekWidgetDefaultFocus": "editor",
+    "editor.cursorSurroundingLines": 10,
+    "black-formatter.args": [
+        "--line-length",
+        "88",
+        // "black default is 88", 
+        // "PES8 default is 79 and Flake8 using this PES8", 
+        "--experimental-string-processing"
+    ],
+    "flake8.args": [
+      "--max-line-length=120",
+      "--ignore=E501,W503"
+  ],
+  "window.zoomLevel": 2
+  }
